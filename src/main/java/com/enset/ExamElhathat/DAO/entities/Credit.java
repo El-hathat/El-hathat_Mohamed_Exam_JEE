@@ -1,10 +1,13 @@
 package com.enset.ExamElhathat.DAO.entities;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Entity
+@Data
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "type_credit")
 public abstract class Credit {
